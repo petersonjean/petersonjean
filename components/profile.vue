@@ -1,7 +1,7 @@
 <script lang="ts"  setup></script>
 <template>
     <div class="sm:grid  md:grid-cols-4 ">
-        <div class="rounded-lg  bg-light md:col-span-2 bg-cover bg-no-repeat profile min-h-[140px] sm:bg-center" style="position:relative;background-image: url('/_nuxt/img/peterson.jpeg');">
+        <div class="rounded-lg  bg-light md:col-span-2 bg-cover bg-no-repeat profile min-h-[140px] sm:bg-center" style="position:relative;">
             <!-- <img
         class=" rounded-lg" 
         src="../img/peterson.jpeg"
@@ -22,20 +22,23 @@
                 <div class="p-3   max-h-66 hover:grayscale " style="overflow: hidden;" >
                     <img
                     class="scaley-110  "  
-                    src="../img/map-square-svgrepo-com.svg"
+                    src="~/assets/img/map-square-svgrepo-com.svg"
                     alt="location"
                 />  
                 </div>
             </div>
             <div class="bg-light flex  p-2 rounded-lg border border-gray-200 bg-gradient-to-r from-[wheat] to-[#FFDDDD]  ">
-                    <span class="p-2 rounded-full bg-white "><img  src="../img/icon/FaBrandsLinkedinIn.svg" alt="" srcset=""></span> 
-                    <span class="mx-2 p-2 rounded-full bg-white "><img  src="../img/icon/FaBrandsTwitter.svg" alt="" srcset=""></span> 
-                    <span class="p-2 rounded-full bg-white  "><img  src="../img/icon/FaBrandsOrcid.svg" alt="" srcset=""></span> 
+                    <span class="p-2 rounded-full bg-white "><img  src="~/assets/img/icon/FaBrandsLinkedinIn.svg" alt="" srcset=""></span> 
+                    <span class="mx-2 p-2 rounded-full bg-white "><img  src="~/assets/img/icon/FaBrandsTwitter.svg" alt="" srcset=""></span> 
+                    <span class="p-2 rounded-full bg-white  "><img  src="~/assets/img/icon/FaBrandsOrcid.svg" alt="" srcset=""></span> 
                 </div> 
         </div>
     </div>
 </template>
 <style>
+.profile{
+    background-image: url('~/assets/img/peterson.jpeg');
+}
 .profile::before{
       content: '';
       position: absolute;
