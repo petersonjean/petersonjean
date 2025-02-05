@@ -1,0 +1,53 @@
+{
+    "publications": [
+        {
+            "title": "Enhancing Health Data Representation for Older Adults: Unlocking Opportunities",
+            "authors": [
+                "Jean, Peterson"
+            ],
+            "journal": "",
+            "year": 2023,
+            "month":"8",
+            "volume": "",
+            "issue": "",
+            "pages": "",
+            "doi": "",
+            "url": "",
+            "abstract": ""
+        },
+        {
+            "title": "Accessibility of Health Data Representations for Older Adults: Challenges and Opportunities for Design",
+            "authors": [
+                "Jean, Peterson",
+                "Murphy, Emma",
+                "Bates, Enda"
+            ],
+            "journal": "International Conference on Human-Computer Interaction",
+            "year": 2023,
+            "month":"8",
+            "volume": "",
+            "issue": "",
+            "pages": "486-493",
+            "doi": "",
+            "url": "",
+            "abstract": ""
+        },
+        {
+            "title": "“What does THIS Mean?”: A Collaborative Expert Evaluation of Health Data Representations for Older Adults",
+            "authors": [
+                "Jean, Peterson",
+                "Murphy, Emma",
+                "Bates, Enda"
+            ],
+            "journal": "International Conference on Computers Helping People with Special Needs",
+            "year": 2024,
+            "month":"8",
+            "volume": "",
+            "issue": "",
+            "pages": "365-372",
+            "doi": "",
+            "url": "",
+            "abstract": ""
+        }
+    ]
+}

@@ -14,7 +14,7 @@
             </div>
             <div class="my-2 bg-light rounded-lg border border-gray-200">
                 <div class="flex justify-between  p-3 rounded-lg font-normal">
-                    <span >Location:</span> <span>...</span>
+                    <span >Location:</span> <span>Dublin, Ireland</span>
                 </div> 
                 <!-- <div class="h-36   bg-center bg-contain bg-no-repeat" style="background-image:url('/_nuxt/img/map-square-svgrepo-com.svg')">
 

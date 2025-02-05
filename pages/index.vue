@@ -11,7 +11,7 @@ let excerpt = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do e
        <Profile class="px-2 col-span-3" />
     </div>
     <div class="container xl:grid xl:grid-cols-4  ">
-        <ProjectSummary class="px-2 col-span-2 object-fill" />
+        <PublicationSummary class="px-2 col-span-2 object-fill" />
        <Bio class="px-2 col-span-2" />
     </div>
     <div class="container mt-5">
