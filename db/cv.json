@@ -1,0 +1,179 @@
+{
+    "name": "Peterson Jean",
+    "contact": {
+      "address": "Dublin,Ireland",
+      "email": "jean.peterson[at]tudublin.ie",
+      "phone": " "
+    },
+    "education": [
+      {
+        "institution": "Technological University Dublin",
+        "location": "Dublin, Ireland",
+        "duration": "October 2022 - Present",
+        "degree": "PhD Studentship - SFI D-real",
+        "research_topic": "Empowering older adults to engage with their own health data using multimodal feedback",
+        "interests": [
+          "Human-Computer Interaction",
+          "Human-centred design",
+          "User engagement",
+          "Digital Health"
+        ],
+        "description": "Exploring accessibility and usability challenges for older adults using sensor devices. Investigating new ways to convey physiological sensing data to engage them in improving their health.",
+        "profile": "https://scholar.google.com/citations?user=n6EWpDwAAAAJ&hl=en"
+      },
+      {
+        "institution": "Swansea University",
+        "location": "Swansea, UK",
+        "duration": "September 2021 - November 2022",
+        "degree": "Master of Science Advanced Computer Science (Distinction)",
+        "research_project": "Verifying user interfaces with Spark Ada, a case study for the T35 syringe pump",
+        "specialisms": [
+          "Critical Systems",
+          "Embedded Systems",
+          "Human-Computer Interaction"
+        ],
+        "description": "Collaborated on interactive systems research, performed comparative solutions analysis for hand therapy, and developed an embodied prototype for non-assisted therapy."
+      },
+      {
+        "institution": "Ecole Superieure d’Infotronique d’Haiti",
+        "location": "Port-au-Prince, Haiti",
+        "duration": "September 2012 - September 2016",
+        "degree": "Bachelor of Science in Computer Science",
+        "grade": "81.16%"
+      }
+    ],
+    "publications": [
+      {
+        "title": "Accessibility of Health Data Representations for Older Adults: Challenges and Opportunities for Design",
+        "authors": "P Jean, E Murphy, E Bates",
+        "conference": "International Conference on Human-Computer Interaction",
+        "pages": "486-493"
+      },
+      {
+        "title": "What does THIS Mean?: A Collaborative Expert Evaluation of Health Data Representations for Older Adults",
+        "authors": "P Jean, E Murphy, E Bates",
+        "conference": "International Conference on Computers Helping People with Special Needs",
+        "pages": "365-372"
+      }
+    ],
+    "certifications": [
+      {
+        "institution": "Arizona State University",
+        "location": "Arizona, United States",
+        "duration": "May 2019",
+        "certification": "American Express Leadership Academy",
+        "description": "Completed the Executive Education program for world-class leaders and nonprofit managers to tackle challenging social problems hosted by Thunderbird School of Global Management."
+      }
+    ],
+    "workExperience": [
+      {
+        "company": "Technological University Dublin",
+        "location": "Dublin, Ireland",
+        "position": "Hourly-Paid Assistant Lecturer - Web Development",
+        "duration": "February 2023 - Present",
+        "description": "Taught 2 hours weekly of web development to second-year Construction and Surveying students.",
+        "topics_covered": [
+          "Evolution of HTML and web technologies",
+          "Web Semantics",
+          "Web Design and Styling (CSS, Typography, Color Theory)",
+          "W3C validation",
+          "JavaScript and Interaction (Animation, Events)",
+          "Code management (DRY Method, GIT, GitHub)",
+          "Server Deployment (Vercel, Git)"
+        ]
+      },
+      {
+        "company": "Global Voice Group",
+        "location": "Madrid, Spain",
+        "position": "Front-end Developer (Remote)",
+        "duration": "January 2019 - September 2021",
+        "description": "Developed front-end features for government digital information compliance software to monitor mobile money fraud.",
+        "responsibilities": [
+          "Conducted user research and developed solutions based on user needs",
+          "Translated prototypes into reusable Vue.js web features",
+          "Trained new hires in daily operations"
+        ]
+      },
+      {
+        "company": "Haitian Education and Leadership Program",
+        "location": "Port-au-Prince, Haiti",
+        "position": "Information Technology Coordinator",
+        "duration": "July 2017 - September 2021",
+        "description": "Managed IT operations for 45+ staff and 104+ students across Haiti and New York.",
+        "responsibilities": [
+          "Developed a Drupal student information system integrated with CiviCRM",
+          "Advised on online strategies for reaching disadvantaged areas",
+          "Designed an online application prototype for rural applicants",
+          "Automated student information system reports for research on HELP Education impact"
+        ]
+      }
+    ],
+    "extracurricular_activities": [
+      {
+        "organization": "Irish Human Factors and Ergonomics Society (IHFES)",
+        "duration": "2023 - Present",
+        "location": "Dublin, Ireland",
+        "description": "Active student member, participated and presented at the annual IHFES 2023 conference."
+      },
+      {
+        "organization": "Google Hashcode Competition",
+        "description": "Participated in the competition to gain exposure to industry challenges."
+      }
+    ],
+    "awards": [
+      {
+        "title": "Chevening Scholar",
+        "organization": "UK Government",
+        "year": 2021,
+        "description": "Recipient of a fully-funded and prestigious scholarship to study in the UK."
+      },
+      {
+        "title": "HELP Scholar",
+        "organization": "Haitian Education and Leadership Program",
+        "year": 2012,
+        "description": "Recipient of a merit and needs-based scholarship for academic excellence and community engagement."
+      }
+    ],
+    "skills": {
+      "languages": [
+        "English (Fluent)",
+        "French (Fluent)",
+        "Créole (Native)",
+        "Spanish (Beginner)"
+      ],
+      "software": [
+        "M365 (Proficient)",
+        "LaTeX (Intermediate)",
+        "Figma UI/UX (Intermediate)"
+      ],
+      "programming_languages": [
+        "C",
+        "Java",
+        "PHP",
+        "JavaScript"
+      ],
+      "web_technologies": [
+        "HTML5",
+        "CSS3",
+        "JavaScript (Vue.js)",
+        "PHP (Laravel, Drupal, CiviCRM)"
+      ],
+      "development_tools": [
+        "Git (Repo Maintainer)",
+        "REST API",
+        "SOAP Web Services (JAX-WS)"
+      ],
+      "additional_skills": [
+        "Data Optimization in Python",
+        "Verification in Spark Ada",
+        "Project Management (Jira, Slack, MantisBT)"
+      ]
+    },
+    "links": {
+      "research_profile": "https://scholar.google.com/citations?user=n6EWpDwAAAAJ&hl=en",
+      "Technological University Dublin": "https://www.tudublin.ie/",
+      "Global Voice Group": "http://www.globalvoicegroup.com",
+      "Haitian Education and Leadership Program": "http://www.uhelp.net/"
+    }
+  }
+  
