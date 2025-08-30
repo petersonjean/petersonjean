@@ -2,7 +2,7 @@
   <div >
     <!-- <NuxtWelcome /> -->
     <MenuNavbar/>
-    <NuxtPage class="text-lg"/>
+    <NuxtPage />
   </div>
 </template>
 <style>

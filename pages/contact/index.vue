@@ -1,9 +1,9 @@
 <script lang="ts" setup>
 </script>
 <template>
-    
-    <div class="container mx-auto px-4">
-        <h1>contact</h1>
-    <h1 class="text-3xl font-bold underline">Welcome</h1>
+    <div class="container mx-auto px-4 xl:grid  xl:grid-cols-5">
+        <!-- <h1>contact</h1> --> 
+    <Bio class="px-2 col-span-2 " :length="'long'" />
+    <ContactDetail class="px-2 col-span-3" />
   </div>
 </template>
