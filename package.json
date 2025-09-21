@@ -6,7 +6,9 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "sync-research": "node utils/scripts/fetch-research.js",
+    "build-with-data": "npm run sync-research && nuxt generate"
   },
   "devDependencies": {
     "nuxt": "^3.15.4"
@@ -14,6 +16,7 @@
   "dependencies": {
     "@nuxt/content": "^2.5.2",
     "@nuxtjs/tailwindcss": "^6.6.4",
-    "i18n-iso-countries": "^7.14.0"
+    "i18n-iso-countries": "^7.14.0",
+    "tone": "^15.1.22"
   }
 }

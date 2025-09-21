@@ -2,9 +2,23 @@
 import { ref, onMounted } from 'vue'; 
 import publicationsData from '@/db/publications.json';
 
-const publications = ref([]);
+const publicationsold = ref([]);
+
+
+import PublicationCard from '~/components/publication/PublicationCard.vue'
+
+const { 
+  profile, 
+  publications, 
+  publicationsByYear, 
+  lastUpdated,
+  loading, 
+  error, 
+  loadStaticData 
+} = useResearch() 
 
 onMounted(() => {
+  loadStaticData()
     let sortedPub = (publicationsData.publications).sort((a,b)=>{
         if (a.year === b.year) {
           return b.month - a.month;
@@ -13,59 +27,92 @@ onMounted(() => {
     });
     // console.log("pub are:", sortedPub,publicationsData.publications);
     
-    publications.value = sortedPub;
+    publicationsold.value = sortedPub;
     
 });
+
+
+const formatDate = (date: Date) => {
+  return new Intl.DateTimeFormat('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  }).format(date)
+}
 </script>
 
 <template>
     <div class="container mx-auto px-4">
-        <h1 class="text-3xl font-bold underline">Publications</h1>
-        <div class="container mx-auto px-4 py-8">
   <!-- Timeline Item - Current Position -->
-  <div class="flex items-start min-h-48" v-for="(pub, index) in publications" :key="index"  >
-    <!-- Bullet -->
-    <div class="relative">
-      <div class="w-5 h-5   rounded-full  "
-      :class="{
-          'bg-wheat-500 shadow-lg': index == 0,
-          'bg-gray-400': index > 0
-        }"></div>
-      <!-- Gradient Bar -->
-      <div v-if="index !== publications.length - 1"
-        class="absolute top-6 left-1/2 transform -translate-x-1/2 w-1"
-       
-        :style="{
-          height: `150px`,
-          background: index== 0
-            ? 'linear-gradient(to bottom,wheat, #FFDDDD , transparent)'
-            : 'linear-gradient(to bottom, #a0aec0, transparent)'}"></div>
+    <section class="research-section">
+    <header class="section-header">
+      <div class="header-content">
+        <h2 class="section-title">Research & Publications</h2>
+        <p v-if="profile" class="section-subtitle">
+          {{ profile.name }}
+          <span v-if="profile.affiliation"> • {{ profile.affiliation }}</span>
+        </p>
+      </div>
+      
+      <div class="header-stats">
+        <div class="stat">
+          <span class="stat-number">{{ publications.length }}</span>
+          <span class="stat-label">Publications</span>
+        </div>
+      </div>
+    </header>
+    
+    <div v-if="error" class="error-banner">
+      <p class="error-message">{{ error }}</p>
     </div>
-    <!-- Content -->
-    <div class="ml-4 pb-4 ">
-        <PublicationItem :publication="pub"/> 
+    
+    <div v-if="loading" class="loading-state">
+      <div class="loading-spinner">
+        <div class="spinner"></div>
+        <p>Loading publications...</p>
+      </div>
     </div>
-  </div>
+    
+    <div v-else-if="publications.length" class="publications-content">
+      <div v-if="lastUpdated" class="last-updated">
+        <span class="last-updated-label">Last updated:</span>
+        <time :datetime="lastUpdated.toISOString()" class="last-updated-time">
+          {{ formatDate(lastUpdated) }}
+        </time>
+      </div>
+      
+      <div class="publications-by-year">
+        <div v-for="[year, yearPublications] in publicationsByYear" :key="year" class="year-group">
+          <h3 class="year-header">{{ year }}</h3>
+          <div class="year-publications">
+            <PublicationCard
+              v-for="publication in yearPublications"
+              :key="publication.id"
+              :publication="publication"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div v-else class="empty-state">
+      <div class="empty-content">
+        <svg class="empty-icon w-12 h-12 text-gray-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+        </svg>
+        <h3 class="empty-title">No publications found</h3>
+        <p class="empty-message">
+          Publications will appear here once data is available from ORCID.
+        </p>
+      </div>
+    </div>
+  </section>
 
  
   
 </div>
-
-<!-- 
-        <div class="publications-timeline">
-            <div v-for="(pub, index) in publications" :key="index" class="publication-item min-h-40">
-                <div class="dot-timeline relative  h-40" >
-                     <span class="absolute left-2 m-auto w-px min-h-36 bg-yellow  bg-teal-900"></span>
-                    <div class="absolute dot left-1"></div>
-                    
-                </div>
-                <div class="content min-h-40 ml-3">
-                    <PublicationItem :publication="pub"/> 
-                </div>
-            </div>
-        </div> -->
- 
-    </div>
+  
+    
 </template>
 <style scoped>
 .publications-timeline {
@@ -120,4 +167,94 @@ onMounted(() => {
   width: 90%;
 }
 
+
+
+.research-section {
+  @apply max-w-4xl mx-auto px-4 py-8;
+}
+
+.section-header {
+  @apply flex flex-col sm:flex-row sm:items-center sm:justify-between mb-8;
+}
+
+.section-title {
+  @apply text-3xl font-bold text-gray-900 dark:text-white mb-2;
+}
+
+.section-subtitle {
+  @apply text-lg text-gray-600 dark:text-gray-400;
+}
+
+.header-stats {
+  @apply mt-4 sm:mt-0;
+}
+
+.stat {
+  @apply text-center;
+}
+
+.stat-number {
+  @apply text-2xl font-bold text-blue-600 dark:text-blue-400 block;
+  color:#0ea5e9;
+}
+
+.stat-label {
+  @apply text-sm text-gray-600 dark:text-gray-400 uppercase tracking-wide;
+}
+
+.error-banner {
+  @apply bg-red-50 border border-red-200 rounded-lg p-4 mb-6;
+}
+
+.error-message {
+  @apply text-red-800;
+}
+
+.loading-state {
+  @apply flex justify-center py-12;
+}
+
+.loading-spinner {
+  @apply text-center;
+}
+
+.spinner {
+  @apply w-8 h-8 border-4 border-blue-200 border-t-blue-600 rounded-full animate-spin mx-auto mb-4;
+}
+
+.last-updated {
+  @apply text-sm text-gray-500 mb-6 pb-4 border-b border-gray-200;
+}
+
+.last-updated-label {
+  @apply font-medium;
+}
+
+.year-group {
+  @apply mb-8;
+}
+
+.year-header {
+  @apply text-2xl font-bold text-gray-900 dark:text-white mb-4 pb-2 border-b-2 border-blue-500;
+}
+
+.year-publications {
+  @apply space-y-4;
+}
+
+.empty-state {
+  @apply text-center py-12;
+}
+
+.empty-content {
+  @apply max-w-md mx-auto;
+}
+
+.empty-title {
+  @apply text-lg font-medium text-gray-900 mb-2;
+}
+
+.empty-message {
+  @apply text-gray-600;
+}
 </style>
