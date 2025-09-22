@@ -34,10 +34,19 @@ jobs:
       - name: Check for changes
         id: changes
         run: |
-          if git diff --quiet public/data/; then
+          # Create directory if it doesn't exist
+          mkdir -p public/data
+          
+          # Add all files and check git status
+          git add public/data/
+          
+          # Check if there are staged changes
+          if git diff --cached --exit-code >/dev/null 2>&1; then
             echo "changed=false" >> $GITHUB_OUTPUT
+            echo "No changes detected"
           else
-            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "changed=true" >> $GITHUB_OUTPUT  
+            echo "Changes detected"
           fi
           
       - name: Commit and push changes
