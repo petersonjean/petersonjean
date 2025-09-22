@@ -1,0 +1,95 @@
+[
+  {
+    "id": "orcid-192370115",
+    "title": "Lost in Data: How Older Adults Perceive and Navigate Health Data Representations",
+    "journal": "18th Innternational Conference for Advancement of Assistive Technology in Europe (AAATE)",
+    "year": 2025,
+    "doi": "10.48550/ARXIV.2509.11876",
+    "url": "https://doi.org/10.48550/ARXIV.2509.11876",
+    "authors": [
+      "Peterson Jean",
+      "Emma Murphy",
+      "Enda Bates"
+    ],
+    "type": "conference-paper",
+    "lastUpdated": "2025-09-22T01:10:45.870Z"
+  },
+  {
+    "id": "orcid-190875453",
+    "title": "Age-Friendly AI: Ireland’s National Artificial Intelligence Literacy Initiative",
+    "year": 2025,
+    "doi": "10.1007/978-3-032-01632-4_15",
+    "url": "https://doi.org/10.1007/978-3-032-01632-4_15",
+    "authors": [
+      "Kelly Paula",
+      "Berry Damon",
+      "O’Sullivan Dympna",
+      "Murphy Emma",
+      "Jean Peterson",
+      "Badmos Fatima",
+      "Grehan Laura",
+      "Clarke Emma"
+    ],
+    "type": "book-chapter",
+    "lastUpdated": "2025-09-22T01:10:45.870Z"
+  },
+  {
+    "id": "orcid-190875454",
+    "title": "Learning from Each Other: An Inclusive and Reflexive Analysis of the Experiences of Co-designers with Intellectual Disabilities",
+    "year": 2025,
+    "doi": "10.1007/978-3-032-01632-4_47",
+    "url": "https://doi.org/10.1007/978-3-032-01632-4_47",
+    "authors": [
+      "Emma Murphy",
+      "Patrick Fitzgerald",
+      "Fatima Badmos",
+      "Peterson Jean",
+      "John Gilligan",
+      "Dympna O’Sullivan",
+      "Sarah Boland"
+    ],
+    "type": "book-chapter",
+    "lastUpdated": "2025-09-22T01:10:45.871Z"
+  },
+  {
+    "id": "orcid-162983160",
+    "title": "“What does THIS Mean?”: A Collaborative Expert Evaluation of Health Data Representations for Older Adults",
+    "year": 2024,
+    "doi": "10.1007/978-3-031-62849-8_45",
+    "url": "https://doi.org/10.1007/978-3-031-62849-8_45",
+    "authors": [
+      "Peterson Jean",
+      "Emma Murphy",
+      "Enda Bates"
+    ],
+    "type": "book-chapter",
+    "lastUpdated": "2025-09-22T01:10:45.871Z"
+  },
+  {
+    "id": "orcid-138318468",
+    "title": "Accessibility of Health Data Representations for Older Adults: Challenges and Opportunities for Design",
+    "year": 2023,
+    "doi": "10.1007/978-3-031-35992-7_65",
+    "url": "https://doi.org/10.1007/978-3-031-35992-7_65",
+    "authors": [
+      "Peterson Jean",
+      "Emma Murphy",
+      "Enda Bates"
+    ],
+    "type": "book-chapter",
+    "lastUpdated": "2025-09-22T01:10:45.871Z"
+  },
+  {
+    "id": "orcid-138747452",
+    "title": "Enhancing Health Data Representation for Older Adults: Unlocking Opportunities",
+    "journal": "First Annual Teaching and Research Showcase 2023",
+    "year": 2023,
+    "doi": "10.21427/62Q8-7633",
+    "url": "https://doi.org/10.21427/62Q8-7633",
+    "authors": [
+      "Peterson Jean"
+    ],
+    "type": "conference-poster",
+    "lastUpdated": "2025-09-22T01:10:45.871Z"
+  }
+]
