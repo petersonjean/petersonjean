@@ -2,8 +2,8 @@ name: Research Data Sync
 
 on:
   schedule:
-    # Run daily at 6 AM UTC (free GitHub Actions minutes)
-    - cron: '0 6 * * *'
+    # Run first of each month at 5 AM UTC / 6 dublin time (free GitHub Actions minutes)
+    - cron: '0 5 1 * *'
   workflow_dispatch: # Manual trigger
   repository_dispatch: # API trigger
     types: [research-sync]
@@ -48,7 +48,7 @@ jobs:
             echo "changed=true" >> $GITHUB_OUTPUT  
             echo "Changes detected"
           fi
-          
+
       - name: Commit and push changes
         if: steps.changes.outputs.changed == 'true'
         run: |
