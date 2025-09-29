@@ -107,6 +107,7 @@ const formatDate = (date: Date) => {
       </div>
     </div>
   </section>
+  <Footer  class="max-w-6xl mx-auto  "/>
 
  
   

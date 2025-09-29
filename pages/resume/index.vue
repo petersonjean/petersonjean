@@ -131,6 +131,7 @@ const skillColors = {
       </div>
     </div>
   </section>
+  <Footer  class="max-w-6xl mx-auto  "/>
 
         <!-- Skills Section -->
         <!-- <section class="mb-12">
