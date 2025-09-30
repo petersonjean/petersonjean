@@ -1,21 +1,21 @@
 [
-  { "iso3": "IRL", "region": "Europe", "text": "Dia dhuit! Fáilte." },
-  { "iso3": "GBR", "region": "Europe", "text": "Howdy! Welcome." },
-  { "iso3": "FRA", "region": "Europe", "text": "Salut ! Bienvenue." },
-  { "iso3": "ESP", "region": "Europe", "text": "¡Hola! Bienvenido/a." },
-  { "iso3": "DEU", "region": "Europe", "text": "Hallo! Willkommen." },
+  { "iso3": "IRL", "region": "Europe", "text": "Dia dhuit! ","welcomeText":" Fáilte." },
+  { "iso3": "GBR", "region": "Europe", "text": "Howdy! ","welcomeText":" Welcome." },
+  { "iso3": "FRA", "region": "Europe", "text": "Salut ! ","welcomeText":" Bienvenue." },
+  { "iso3": "ESP", "region": "Europe", "text": "¡Hola! ","welcomeText":" Bienvenido/a." },
+  { "iso3": "DEU", "region": "Europe", "text": "Hallo! ","welcomeText":" Willkommen." },
 
-  { "iso3": "NGA", "region": "Africa", "text": "Sannu! Maraba." },
-  { "iso3": "GHA", "region": "Africa", "text": "Akwabaa! Mo akwaaba." },
-  { "iso3": "ZAF", "region": "Africa", "text": "Hallo! Welkom." },
+  { "iso3": "NGA", "region": "Africa", "text": "Sannu! ","welcomeText":" Maraba." },
+  { "iso3": "GHA", "region": "Africa", "text": "Akwabaa! ","welcomeText":" Mo akwaaba." },
+  { "iso3": "ZAF", "region": "Africa", "text": "Hallo! ","welcomeText":" Welkom." },
 
-  { "iso3": "USA", "region": "Americas", "text": "Howdy! Welcome." },
-  { "iso3": "BRA", "region": "Americas", "text": "Olá! Bem-vindo/a." },
+  { "iso3": "USA", "region": "Americas", "text": "Howdy! ","welcomeText":" Welcome." },
+  { "iso3": "BRA", "region": "Americas", "text": "Olá! ","welcomeText":" Bem-vindo/a." },
 
-  { "iso3": "JPN", "region": "Asia", "text": "こんにちは！ようこそ。" },
-  { "iso3": "CHN", "region": "Asia", "text": "嗨！欢迎。" },
-  { "iso3": "IND", "region": "Asia", "text": "Namaste! Swāgat hai." },
+  { "iso3": "JPN", "region": "Asia", "text": "こんにちは！","welcomeText":"ようこそ。" },
+  { "iso3": "CHN", "region": "Asia", "text": "嗨！","welcomeText":"欢迎。" },
+  { "iso3": "IND", "region": "Asia", "text": "Namaste! ","welcomeText":" Swāgat hai." },
 
-  { "iso3": "AUS", "region": "Oceania", "text": "G’day! Welcome." },
-  { "iso3": "NZL", "region": "Oceania", "text": "Kia ora! Nau mai." }
+  { "iso3": "AUS", "region": "Oceania", "text": "G’day! ","welcomeText":" Welcome." },
+  { "iso3": "NZL", "region": "Oceania", "text": "Kia ora! ","welcomeText":" Nau mai." }
 ]

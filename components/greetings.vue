@@ -1,26 +1,20 @@
-<template>
-     <div class="px-2 pt-10 col-span-2 flex align-center justify-center bg-gradient-radial from-[#e1dfff] via-[#e1dfff] to-[#fafaff] rounded-lg">
-    <h1 class="md:text-7xl bg-clip-text text-4xl font-extrabold leading-[60px] tracking-tight text-transparent bg-gradient-to-r from-[#4D669D] to-[#DBDDDD] rounded-lg">
-      {{ currentGreeting }}
-    </h1>
-      <!-- <p class="hero__sub" v-if="resolvedRegion">
-    Showing greetings from your region: <strong>{{ resolvedRegion }}</strong>
-  </p> -->
-  </div>
-
-</template>
-
 <script setup lang="ts">
 import { onMounted, onBeforeUnmount, ref } from "vue";
 import greetings from "@/db/greetings.json";
 import countries from "i18n-iso-countries";
 import en from "i18n-iso-countries/langs/en.json";
+import raw from '@/db/popdataset.json'; // your JSON array 
+import { getByCode, toSeries, projectLinear, type UNRow } from '@/utils/agingData';
+
+const data = raw as unknown as UNRow[];
+
 countries.registerLocale(en);
 
-type Greeting = { iso3: string; region: string; text: string };
+type Greeting = { iso3: string; region: string; welcomeText:string; };
 
 const all = greetings as Greeting[];
-const currentGreeting = ref<string>("Howdy! Welcome.");
+const currentGreeting = ref<string>("Howdy!");
+const currentWelcome = ref<string>("Welcome");
 const resolvedRegion = ref<string>("");
 
 let timer: number | null = null;
@@ -100,9 +94,9 @@ async function init() {
   // 3) Try to find a greeting for the country
   let greetingForCountry: Greeting | undefined;
   let region: string;
-
+  let iso3: string | null = null;
   if (iso2) {
-    const iso3 = iso2To3(iso2);
+    iso3 = iso2To3(iso2);
     greetingForCountry = all.find(g => g.iso3 === iso3);
     region = pickRegionForISO2(iso2) || "Europe";
   } else {
@@ -121,22 +115,68 @@ async function init() {
   }
 
   if (candidates.length === 0) {
-    currentGreeting.value = "Howdy! Welcome.";
+    currentGreeting.value = "Howdy!";
+    currentWelcome.value = "Welcome";
     return;
   }
 
   let idx = 0;
   currentGreeting.value = candidates[idx].text;
+   currentWelcome.value = candidates[idx].welcomeText;
 
   // rotation every 2s
   if (!prefersReducedMotion) {
     timer = window.setInterval(() => {
       idx = (idx + 1) % candidates.length;
       currentGreeting.value = candidates[idx].text;
+      currentWelcome.value = candidates[idx].welcomeText;
     }, 2000);
-  }
+  
 }
+}
+ 
+const iso3 = 'IRL'; // replace with detected/default country
+const worldIso3 = 'WLD'; // World aggregate is usually "WLD"
+
+const rowCountry = getByCode(data, iso3)!;
+const rowWorld   = getByCode(data, worldIso3)!;
+
+const seriesCountry = toSeries(rowCountry, { from: 1960 });
+const seriesWorld   = toSeries(rowWorld,   { from: 1960 });
+
+// optional short projection to make the ending feel urgent (e.g., +8 years)
+const projection = projectLinear(seriesCountry, 8, 5);
 </script>
+ <template>
+  <div
+    class="px-2 pt-10 col-span-2 bg-gradient-radial from-slate-700 via-slate-300 to-slate-100 rounded-lg flex flex-col xl:flex-col sm:flex-col md:flex-row flex-row  justify-center gap-8"
+    style="min-height:340px;"
+  >
+  <div class="space-y-4">
+        <!-- Greeting headline -->
+                    <div class="text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-slate-blue to-dusty-rose bg-clip-text text-transparent">
+                              {{ currentGreeting }} 
+                    </div>
+                    <div class="text-3xl sm:text-4xl lg:text-5xl font-medium bg-gradient-to-r from-slate-blue to-dusty-rose bg-clip-text text-transparent text-gray-700 leading-tight">
+                         {{ currentWelcome }}
+                    </div>
+                    <div class="w-16 h-1 bg-gradient-to-r from-[#c23636] to-[#fafaff] rounded-full"></div>
+                    
+                </div>
+     
+    <!-- AgingClock component -->
+    <div class="flex-1 flex items-center justify-center w-full h-full max-h-[340px]">
+      <!-- <AgingClock
+        countryName="Ireland"
+        :series="seriesCountry"
+        :globalSeries="seriesWorld"
+        :projection="projection"
+        :durationMs="4200"
+        class="w-full h-full max-h-[340px]"
+      /> -->
+    </div>
+  </div>
+</template>
 
 <style scoped>
 .hero {

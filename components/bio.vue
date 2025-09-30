@@ -7,9 +7,9 @@ const bioLength = props.length ?? 'short'
 </script>
 <template>
     <div  class="md:pl-2  "> 
-        <div class="rounded-lg bg-light  border border-gray-200" >
+        <div class="rounded-lg bg-slate-100  border border-gray-200" >
             <div class="flex justify-between  p-3  ">
-                <span  class="font-bold text-black">About me</span> <span class="font-normal text-[#848484]">Resume</span> 
+                <span  class="font-bold text-slate-700">About me</span> <span class="font-normal text-[#848484]">Resume</span> 
             </div>
             <div class="  p-3 text-gray" v-if="bioLength ==='short'">
                 <p class="lead" style="margin:0 0 10px; font-size:1.05rem; color:#111827;">

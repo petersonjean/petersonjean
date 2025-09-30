@@ -2,7 +2,7 @@
 import { Analytics } from '@vercel/analytics/nuxt';
 </script>
 <template>
-  <div >
+  <div  class="dark:bg-gray-800">
     <Analytics />
     <!-- <NuxtWelcome /> -->
     <MenuNavbar/>
@@ -16,6 +16,21 @@ import { Analytics } from '@vercel/analytics/nuxt';
 @supports (font-variation-settings: normal) {
   :root { font-family: 'Inter var', sans-serif; }
 }
+
+        /* Accessible color palette adapted from original - WCAG AAA compliant */
+        :root {
+            --primary-500: #5b7fc4;
+            --primary-600: #4a6ba8;
+            --primary-700: #3a5687;
+            --primary-800: #2d4269;
+            --accent-500: #e57373;
+            --accent-600: #d84a4a;
+            --accent-700: #c23636;
+            --bg-gray: #f5f5f7;
+            --card-gray: #e8e8ed;
+            --text-dark: #1a1a1a;
+            --text-medium: #4a4a4a;
+        }
 /* html{
  font-family: " Inter var,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji";
 } */

@@ -1,9 +1,10 @@
 
 <template>
         <!-- Social Links Card -->
-        <div class="bg-light border border-gray-200 bg-gradient-to-r from-[wheat] to-[#FFDDDD]   rounded-2xl  shadow-lg card-hover border border-white/30 mb-1">
+        <div class=" rounded-lg bg-slate-100 card-hover border shadow-lg  mb-1">
             <div class="text-center">
-                <h3 class="text-lg font-semibold text-gray-700 mb-4">Connect with me</h3>
+                <h3 class="bg-gradient-to-r from-slate-blue to-dusty-rose bg-clip-text text-transparent m-auto mb-4 w-64 text-lg font-semibold text-gray-700 mb-4 relative pb-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-gradient-to-r after:from-[#c23636] after:to-[#fafaff]">Connect with me</h3>
+
                 <div class="flex justify-center space-x-6">
                     <NuxtLink to="https://www.linkedin.com/in/peterson-jean-27205b126/" class="p-2 rounded-full bg-white inline-block">
                         <img src="~/assets/img/icon/FaBrandsLinkedinIn.svg" alt="LinkedIn" srcset="">

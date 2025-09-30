@@ -236,7 +236,7 @@ const formatDate = (date: Date) => {
 }
 
 .year-header {
-  @apply text-2xl font-bold text-gray-900 dark:text-white mb-4 pb-2 border-b-2 border-blue-500;
+  @apply text-2xl font-bold text-slate-700 dark:text-white mb-4 pb-2 border-b-2 border-blue-500;
 }
 
 .year-publications {
