@@ -28,12 +28,13 @@ const skillColors = {
 </script>
 <template>
     
-    <div class="container mx-auto px-4">
-        <h1 class="text-3xl font-bold">CV</h1>
+    <div class="container  px-4">
+        <h1 class="section-title">CV</h1>
+        
 
               <!-- Education Section -->
-              <section class="mb-12">
-          <h2 class="text-2xl font-bold mb-6 ">Education</h2>
+              <section class="mx-4 md:mx-1">
+          <h2 class="section-subtitle font-bold mb-6 ">Education</h2>
           <div v-for="(edu, index) in cv.education" :key="index" class="flex items-start mt-8">
             <!-- Bullet -->
             <div class="relative">
@@ -55,7 +56,7 @@ const skillColors = {
 
 
       <!-- Work Experience Section -->
-        <section class="mb-12">
+        <section class="mx-4 md:mx-1">
           <h2 class="text-2xl font-bold mb-6">Work Experience</h2>
           <div v-for="(job, index) in cv.workExperience" :key="index" class="flex items-start mt-8">
             <!-- Bullet -->
@@ -93,7 +94,7 @@ const skillColors = {
 
 
         <!-- Section : all Skills by categories -->
-  <section class="mb-12">
+  <section class="mx-4 md:mx-1 mb-12">
     <h2 class="text-2xl font-bold mb-6">Skills</h2>
 
     <!-- Legend -->

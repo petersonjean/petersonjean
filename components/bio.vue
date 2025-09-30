@@ -20,7 +20,8 @@ const bioLength = props.length ?? 'short'
                 <p style="margin:0;">
                     My research spans <strong>Human–Computer Interaction</strong>, <strong>Digital Health</strong>, and <strong>Health Informatics</strong>, focusing on designing
                     <strong>data-driven, age-friendly healthcare systems</strong> for older adults. By integrating human-centred design, multimodal interaction, and critical systems expertise,
-                    I create accessible self-monitoring/assistive solutions that promote independence, health equity, and quality of life. <a href="http://"> read more...</a>
+                    I create accessible self-monitoring/assistive solutions that promote independence, health equity, and quality of life. <a href="http://"> read more...</a> 
+                    <NuxtLink  to="/about" style="color:#c23636; text-decoration:none; border-bottom:2px solid #c23636;" > read more -> </NuxtLink>
                 </p>
             </div>  
             <div v-else class="  p-3 text-gray" >

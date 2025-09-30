@@ -174,17 +174,6 @@ const formatDate = (date: Date) => {
   @apply max-w-4xl mx-auto px-4 py-8;
 }
 
-.section-header {
-  @apply flex flex-col sm:flex-row sm:items-center sm:justify-between mb-8;
-}
-
-.section-title {
-  @apply text-3xl font-bold text-gray-900 dark:text-white mb-2;
-}
-
-.section-subtitle {
-  @apply text-lg text-gray-600 dark:text-gray-400;
-}
 
 .header-stats {
   @apply mt-4 sm:mt-0;

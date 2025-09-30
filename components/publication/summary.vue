@@ -1,5 +1,5 @@
 <script lang="ts"  setup></script>
-<template>
+<template> 
     <div  class="md:pl-2 rounded-lg bg-slate-100 border ">  
             <div class="flex justify-between  p-3  border-gray-200 ">
                 <span   class="font-bold text-slate-700">Latest works</span> <span class="font-normal text-[#848484]">view all</span>
@@ -19,4 +19,5 @@
               
             </div>  
     </div>
+
 </template>

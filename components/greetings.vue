@@ -148,7 +148,7 @@ const seriesWorld   = toSeries(rowWorld,   { from: 1960 });
 const projection = projectLinear(seriesCountry, 8, 5);
 </script>
  <template>
-  <div
+     <div
     class="px-2 pt-10 col-span-2 bg-gradient-radial from-slate-700 via-slate-300 to-slate-100 rounded-lg flex flex-col xl:flex-col sm:flex-col md:flex-row flex-row  justify-center gap-8"
     style="min-height:340px;"
   >
@@ -175,7 +175,7 @@ const projection = projectLinear(seriesCountry, 8, 5);
         class="w-full h-full max-h-[340px]"
       /> -->
     </div>
-  </div>
+  </div> 
 </template>
 
 <style scoped>

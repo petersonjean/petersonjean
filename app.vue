@@ -44,4 +44,18 @@ import { Analytics } from '@vercel/analytics/nuxt';
  /* background: radial-gradient(86% 83.48% at -27.81% -29.39%,#e1dfff 0%,#e0ddff .01%,#fafaff 100%); */
  
 }
+
+/** general style */
+
+.section-header {
+  @apply flex flex-col sm:flex-row sm:items-center sm:justify-between mb-8;
+}
+
+.section-title {
+  @apply text-3xl font-bold text-gray-900 dark:text-white mb-2;
+}
+
+.section-subtitle {
+  @apply text-lg text-gray-600 dark:text-gray-400;
+}
 </style>

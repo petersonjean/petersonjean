@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-slate-100 p-8 rounded-lg">
+          <div class="bg-slate-100 p-8 rounded-lg">
     <h2 class="text-5xl font-bold mb-2 text-slate-700">Get in touch!</h2>
     <div class="w-16 h-1 bg-accent-500 mb-8"></div>
     
@@ -89,6 +89,7 @@
       </div>
     </form>
   </div>
+
 </template>
 
 <script setup>

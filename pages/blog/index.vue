@@ -2,9 +2,8 @@
 </script>
 <template>
     <div class="container mx-auto  pt-4">
-       
-    <!-- <ContactDetail class="px-2 col-span-3" /> -->
-    <ContactForm class="mx-4 md:mx-1 mb-2 "/>
+       <h2 class="section-title">Blog</h2> 
+         <div class="mx-4 md:mx-1 section-subtitle">Coming Soon</div>
     <Footer class="mx-4 md:mx-1 "/>
   </div>
 </template>
