@@ -15,7 +15,7 @@
         "Enda Bates"
       ],
       "type": "conference-paper",
-      "lastUpdated": "2025-09-22T06:31:34.157Z"
+      "lastUpdated": "2025-10-01T05:11:39.896Z"
     },
     {
       "id": "orcid-190875453",
@@ -34,7 +34,7 @@
         "Clarke Emma"
       ],
       "type": "book-chapter",
-      "lastUpdated": "2025-09-22T06:31:34.158Z"
+      "lastUpdated": "2025-10-01T05:11:39.896Z"
     },
     {
       "id": "orcid-190875454",
@@ -52,7 +52,19 @@
         "Sarah Boland"
       ],
       "type": "book-chapter",
-      "lastUpdated": "2025-09-22T06:31:34.158Z"
+      "lastUpdated": "2025-10-01T05:11:39.896Z"
+    },
+    {
+      "id": "orcid-193037925",
+      "title": "Verifying User Interfaces using SPARK Ada: A Case Study of the T34 Syringe Driver",
+      "year": 2025,
+      "doi": "10.48550/ARXIV.2509.16681",
+      "url": "https://doi.org/10.48550/ARXIV.2509.16681",
+      "authors": [
+        "Peterson Jean"
+      ],
+      "type": "other",
+      "lastUpdated": "2025-10-01T05:11:39.896Z"
     },
     {
       "id": "orcid-162983160",
@@ -66,7 +78,7 @@
         "Enda Bates"
       ],
       "type": "book-chapter",
-      "lastUpdated": "2025-09-22T06:31:34.158Z"
+      "lastUpdated": "2025-10-01T05:11:39.896Z"
     },
     {
       "id": "orcid-138318468",
@@ -80,7 +92,7 @@
         "Enda Bates"
       ],
       "type": "book-chapter",
-      "lastUpdated": "2025-09-22T06:31:34.158Z"
+      "lastUpdated": "2025-10-01T05:11:39.896Z"
     },
     {
       "id": "orcid-138747452",
@@ -93,9 +105,9 @@
         "Peterson Jean"
       ],
       "type": "conference-poster",
-      "lastUpdated": "2025-09-22T06:31:34.158Z"
+      "lastUpdated": "2025-10-01T05:11:39.896Z"
     }
   ],
-  "lastUpdated": "2025-09-22T06:31:34.158Z",
-  "totalPublications": 6
+  "lastUpdated": "2025-10-01T05:11:39.896Z",
+  "totalPublications": 7
 }
