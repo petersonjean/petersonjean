@@ -132,16 +132,16 @@ onUnmounted(() => {
         v-if="isMobileMenuOpen" 
         class="md:hidden fixed inset-0 top-16 bg-white/95 backdrop-blur-md"
       >
-        <div class="px-4 pt-8 pb-6 space-y-4">
+        <div class="px-4 pt-8 pb-6 space-y-4 bg-white">
           <NuxtLink 
             to="/" 
             @click="closeMobileMenu"
             :class="[
               'block px-4 py-3 rounded-lg text-base font-medium transition-colors duration-200',
               $route.path === '/' 
-                ? 'text-slate-700 bg-lavender/50 font-semibold' 
-                : 'text-gray-700 hover:text-slate-700 hover:bg-lavender/30'
-            ]"
+                ? 'active active-mobile text-white scale-105' 
+                 : 'text-gray-700 hover:text-slate-700 px-3 py-2 rounded-lg text-md font-medium transition-colors duration-200 hover:bg-white/50'
+              ]"
           >
             Home
           </NuxtLink>
@@ -151,9 +151,9 @@ onUnmounted(() => {
             :class="[
               'block px-4 py-3 rounded-lg text-base font-medium transition-colors duration-200',
               $route.path === '/publications' 
-                ? 'text-slate-700 bg-lavender/50 font-semibold' 
-                : 'text-gray-700 hover:text-slate-700 hover:bg-lavender/30'
-            ]"
+                 ? 'active text-white scale-105' 
+                  : 'text-gray-700 hover:text-slate-700 px-3 py-2 rounded-lg text-md font-medium transition-colors duration-200 hover:bg-white/50'
+              ]"
           >
             Publications
           </NuxtLink>
@@ -163,9 +163,9 @@ onUnmounted(() => {
             :class="[
               'block px-4 py-3 rounded-lg text-base font-medium transition-colors duration-200',
               $route.path === '/blog' || $route.path.startsWith('/blog/') 
-                ? 'text-slate-700 bg-lavender/50 font-semibold' 
-                : 'text-gray-700 hover:text-slate-700 hover:bg-lavender/30'
-            ]"
+                 ? 'active active-mobile text-white scale-105' 
+                  : 'text-gray-700 hover:text-slate-700 px-3 py-2 rounded-lg text-md font-medium transition-colors duration-200 hover:bg-white/50'
+              ]"
           >
             Blog
           </NuxtLink>
@@ -175,9 +175,9 @@ onUnmounted(() => {
             :class="[
               'block px-4 py-3 rounded-lg text-base font-medium transition-colors duration-200',
               $route.path === '/resume' 
-                ? 'text-slate-700 bg-lavender/50 font-semibold' 
-                : 'text-gray-700 hover:text-slate-700 hover:bg-lavender/30'
-            ]"
+                 ? 'active active-mobile text-white scale-105' 
+                  : 'text-gray-700 hover:text-slate-700 px-3 py-2 rounded-lg text-md font-medium transition-colors duration-200 hover:bg-white/50'
+              ]"
           >
             Resume
           </NuxtLink>
@@ -185,11 +185,11 @@ onUnmounted(() => {
             to="/contact" 
             @click="closeMobileMenu"
             :class="[
-              'block px-4 py-3 rounded-lg text-base font-medium text-center transition-all duration-200 mt-6',
+              'block px-4 py-3 rounded-lg text-base font-medium transition-colors duration-200',
               $route.path === '/contact' 
-                ? 'bg-gradient-to-r from-slate-blue to-dusty-rose text-white shadow-lg' 
-                : 'bg-gradient-to-r from-slate-blue to-dusty-rose text-white hover:shadow-lg'
-            ]"
+                 ? 'active active-mobile text-white scale-105' 
+                  : 'text-gray-700 hover:text-slate-700 px-3 py-2 rounded-lg text-sm font-medium transition-colors duration-200 hover:bg-white/50'
+              ]"
           >
             Contact
           </NuxtLink>
@@ -214,6 +214,13 @@ onUnmounted(() => {
         color: var(--primary-700);
         font-weight: 600;
       }
+      .active-mobile::after {
+        left:1rem;
+        width: 7rem; 
+        border-radius:7px; 
+        bottom: 0px
+      }
+
         .gradient-bg {
             background: linear-gradient(135deg, #7B8CB8 0%, #C4A5A5 100%);
         }
