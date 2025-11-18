@@ -8,7 +8,7 @@
     </div> 
     <div class="container  pb-4 xl:grid xl:grid-cols-4  ">
         <PublicationSummary class="mx-4 md:mx-1 mb-2 col-span-2 " />
-        <Bio class="mx-4 md:mx-1 col-span-2 mb-2"  />
+        <Bio class="sm:mx-2 md:mx-1 col-span-2 mb-2"  />
     </div>
     <!-- <div class="container mt-5">
         <h3 class="font-bold text-slate-700" >Latest posts</h3>
