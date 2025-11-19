@@ -6,7 +6,7 @@ const bioLength = props.length ?? 'short'
 
 </script>
 <template>
-    <div  class="md:pl-2  "> 
+    <!-- <div  class=" ">  -->
         <div class="rounded-lg bg-slate-100  border border-gray-200" >
             <div class="flex justify-between  p-3  ">
                 <span  class="font-bold text-slate-700">About me</span> <span class="font-normal text-[#848484]">Resume</span> 
@@ -74,5 +74,5 @@ const bioLength = props.length ?? 'short'
         </div> 
 
         </div>
-    </div>
+    <!-- </div> -->
 </template>
