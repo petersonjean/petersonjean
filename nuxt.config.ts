@@ -8,11 +8,16 @@ export default defineNuxtConfig({
               {name:"author", content:"Peterson Jean"}
           ],
           link:[
-             { rel:"preconnect", href:"https://rsms.me/"},  
-              { rel: 'stylesheet', href: 'https://rsms.me/inter/inter.css' }
+            //  { rel:"preconnect", href:"https://rsms.me/"},  
+              // { rel: 'stylesheet', href: 'https://rsms.me/inter/inter.css' },
+              // {
+              //   rel: "stylesheet",
+              //   href: "https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+              // }
           ]
       }
   },
+  css: ["~/assets/css/fonts.css"],
   // Runtime config
   runtimeConfig: {
     // Only public config needed for static generation
