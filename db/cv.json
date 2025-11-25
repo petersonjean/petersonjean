@@ -1,249 +1,415 @@
 {
-    "name": "Peterson Jean",
-    "contact": {
-      "address": "Dublin,Ireland",
-      "email": "jean.peterson[at]tudublin.ie",
-      "phone": " "
+  "name": "Peterson Jean",
+  "contact": {
+    "address": "Dublin, Ireland",
+    "email": "jean.peterson[at]tudublin.ie",
+    "phone": "",
+    "website": "https://petersonjean.me"
+  },
+  "education": [
+    {
+      "institution": "Technological University Dublin",
+      "location": "Dublin, Ireland",
+      "duration": "October 2022 - Present",
+      "degree": "Full-time PhD in Human-Computer Interaction - SFI D-real",
+      "research_topic": "Empowering older adults to engage with their own health data using multimodal feedback",
+      "interests": [
+        "Human-Computer Interaction",
+        "Digital Health",
+        "Accessibility for older adults",
+        "User engagement"
+      ],
+      "description": "Currently exploring the accessibility and usability challenges facing older adults when using sensor devices and investigating new ways to convey physiological sensing data to engage them in improving their own health.",
+      "profile": "https://scholar.google.com/citations?user=n6EWpDwAAAAJ&hl=en"
     },
-    "education": [
-      {
-        "institution": "Technological University Dublin",
-        "location": "Dublin, Ireland",
-        "duration": "October 2022 - Present",
-        "degree": "PhD Studentship - SFI D-real",
-        "research_topic": "Empowering older adults to engage with their own health data using multimodal feedback",
-        "interests": [
-          "Human-Computer Interaction",
-          "Human-centred design",
-          "User engagement",
-          "Digital Health"
-        ],
-        "description": "Exploring accessibility and usability challenges for older adults using sensor devices. Investigating new ways to convey physiological sensing data to engage them in improving their health.",
-        "profile": "https://scholar.google.com/citations?user=n6EWpDwAAAAJ&hl=en"
-      },
-      {
-        "institution": "Swansea University",
-        "location": "Swansea, UK",
-        "duration": "September 2021 - November 2022",
-        "degree": "Master of Science Advanced Computer Science (Distinction)",
-        "research_project": "Verifying user interfaces with Spark Ada, a case study for the T35 syringe pump",
-        "specialisms": [
-          "Critical Systems",
-          "Embedded Systems",
-          "Human-Computer Interaction"
-        ],
-        "description": "Collaborated on interactive systems research, performed comparative solutions analysis for hand therapy, and developed an embodied prototype for non-assisted therapy."
-      },
-      {
-        "institution": "Ecole Superieure d’Infotronique d’Haiti",
-        "location": "Port-au-Prince, Haiti",
-        "duration": "September 2012 - September 2016",
-        "degree": "Bachelor of Science in Computer Science",
-        "grade": "81.16%"
-      }
-    ],
-    "publications": [
-      {
-        "title": "Accessibility of Health Data Representations for Older Adults: Challenges and Opportunities for Design",
-        "authors": "P Jean, E Murphy, E Bates",
-        "conference": "International Conference on Human-Computer Interaction",
-        "pages": "486-493"
-      },
-      {
-        "title": "What does THIS Mean?: A Collaborative Expert Evaluation of Health Data Representations for Older Adults",
-        "authors": "P Jean, E Murphy, E Bates",
-        "conference": "International Conference on Computers Helping People with Special Needs",
-        "pages": "365-372"
-      }
-    ],
-    "certifications": [
-      {
-        "institution": "Arizona State University",
-        "location": "Arizona, United States",
-        "duration": "May 2019",
-        "certification": "American Express Leadership Academy",
-        "description": "Completed the Executive Education program for world-class leaders and nonprofit managers to tackle challenging social problems hosted by Thunderbird School of Global Management."
-      }
-    ],
-    "workExperience": [
-      {
-        "company": "Technological University Dublin",
-        "location": "Dublin, Ireland",
-        "position": "Hourly-Paid Assistant Lecturer - Web Development",
-        "duration": "February 2023 - Present",
-        "description": "Taught 2 hours weekly of web development to second-year Construction and Surveying students.",
-        "topics_covered": [
-          "Evolution of HTML and web technologies",
-          "Web Semantics",
-          "Web Design and Styling (CSS, Typography, Color Theory)",
-          "W3C validation",
-          "JavaScript and Interaction (Animation, Events)",
-          "Code management (DRY Method, GIT, GitHub)",
-          "Server Deployment (Vercel, Git)"
-        ]
-      },
-      {
-        "company": "Global Voice Group",
-        "location": "Madrid, Spain",
-        "position": "Front-end Developer (Remote)",
-        "duration": "January 2019 - September 2021",
-        "description": "Developed front-end features for government digital information compliance software to monitor mobile money fraud.",
-        "responsibilities": [
-          "Conducted user research and developed solutions based on user needs",
-          "Translated prototypes into reusable Vue.js web features",
-          "Trained new hires in daily operations"
-        ]
-      },
-      {
-        "company": "Haitian Education and Leadership Program",
-        "location": "Port-au-Prince, Haiti",
-        "position": "Information Technology Coordinator",
-        "duration": "July 2017 - September 2021",
-        "description": "Managed IT operations for 45+ staff and 104+ students across Haiti and New York.",
-        "responsibilities": [
-          "Developed a Drupal student information system integrated with CiviCRM",
-          "Advised on online strategies for reaching disadvantaged areas",
-          "Designed an online application prototype for rural applicants",
-          "Automated student information system reports for research on HELP Education impact"
-        ]
-      }
-    ],
-    "extracurricular_activities": [
-      {
-        "organization": "Irish Human Factors and Ergonomics Society (IHFES)",
-        "duration": "2023 - Present",
-        "location": "Dublin, Ireland",
-        "description": "Active student member, participated and presented at the annual IHFES 2023 conference."
-      },
-      {
-        "organization": "Google Hashcode Competition",
-        "description": "Participated in the competition to gain exposure to industry challenges."
-      }
-    ],
-    "awards": [
-      {
-        "title": "Chevening Scholar",
-        "organization": "UK Government",
-        "year": 2021,
-        "description": "Recipient of a fully-funded and prestigious scholarship to study in the UK."
-      },
-      {
-        "title": "HELP Scholar",
-        "organization": "Haitian Education and Leadership Program",
-        "year": 2012,
-        "description": "Recipient of a merit and needs-based scholarship for academic excellence and community engagement."
-      }
-    ],
-    "skills": {
-      "languages": [
-        "English (Fluent)",
-        "French (Fluent)",
-        "Créole (Native)",
-        "Spanish (Beginner)"
+    {
+      "institution": "Swansea University",
+      "location": "Swansea, UK",
+      "duration": "September 2021 - November 2022",
+      "degree": "Master of Science Advanced Computer Science (Distinction, First class Honours)",
+      "research_project": "Verifying user interfaces with Spark Ada, a case study for the T35 syringe pump",
+      "specialisms": [
+        "Critical Systems",
+        "Embedded Systems",
+        "Human-Computer Interaction"
       ],
-      "software": [
-        "M365 (Proficient)",
-        "LaTeX (Intermediate)",
-        "Figma UI/UX (Intermediate)"
-      ],
-      "programming_languages": [
-        "C",
-        "Java",
-        "PHP",
-        "JavaScript"
-      ],
-      "web_technologies": [
-        "HTML5",
-        "CSS3",
-        "JavaScript (Vue.js)",
-        "PHP (Laravel, Drupal, CiviCRM)"
-      ],
-      "development_tools": [
-        "Git (Repo Maintainer)",
-        "REST API",
-        "SOAP Web Services (JAX-WS)"
-      ],
-      "additional_skills": [
-        "Data Optimization in Python",
-        "Verification in Spark Ada",
-        "Project Management (Jira, Slack, MantisBT)"
+      "description": "Collaborated with peers on identifying relevant interactive systems problems, performed comparative solutions analysis for hand therapy, and developed an embodied prototype for non-assisted therapy, reducing the need for a carer."
+    },
+    {
+      "institution": "Ecole Superieure d’Infotronique d’Haiti",
+      "location": "Port-au-Prince, Haiti",
+      "duration": "September 2012 - September 2016",
+      "degree": "Bachelor of Science in Computer Science",
+      "grade": "81.16%"
+    }
+  ],
+  "publications": [
+    {
+      "title": "Lost in Data: How Older Adults Perceive and Navigate Health Data Representations",
+      "authors": "Jean, Peterson; Murphy, Emma; Bates, Enda",
+      "year": 2025,
+      "type": "Journal / preprint",
+      "venue": "arXiv preprint arXiv:2509.11876",
+      "doi": "10.48550/arXiv.2509.11876",
+      "link": "https://doi.org/10.48550/arXiv.2509.11876"
+    },
+    {
+      "title": "Learning from each other: An inclusive and reflexive analysis of the experiences of co-designers with intellectual disabilities",
+      "authors": "Murphy, Emma; Fitzgerald, Patrick; Badmos, Fatima; Jean, Peterson; Gilligan, John; O'Sullivan, Dympna; Boland, Sarah",
+      "year": 2025,
+      "type": "Book chapter",
+      "venue": "Technology for Inclusion and Participation for All: Recent Achievements and Future Directions",
+      "doi": "10.1007/978-3-032-01632-4_47",
+      "link": "https://doi.org/10.1007/978-3-032-01632-4_47"
+    },
+    {
+      "title": "“What does THIS Mean?”: A Collaborative Expert Evaluation of Health Data Representations for Older Adults",
+      "authors": "Jean, P.; Murphy, E.; Bates, E.",
+      "year": 2024,
+      "type": "Conference paper",
+      "venue": "Computers Helping People with Special Needs (ICCHP 2024), Lecture Notes in Computer Science, vol. 14751",
+      "doi": "10.1007/978-3-031-62849-8_45",
+      "link": "https://doi.org/10.1007/978-3-031-62849-8_45"
+    },
+    {
+      "title": "Accessibility of Health Data Representations for Older Adults: Challenges and Opportunities for Design",
+      "authors": "Jean, P.; Murphy, E.; Bates, E.",
+      "year": 2023,
+      "type": "Conference poster",
+      "venue": "HCI International 2023 Posters (HCII 2023), Communications in Computer and Information Science, vol. 1833",
+      "doi": "10.1007/978-3-031-35992-7_65",
+      "link": "https://doi.org/10.1007/978-3-031-35992-7_65"
+    }
+  ], 
+  "certifications": [
+    {
+      "institution": "Arizona State University",
+      "location": "Arizona, United States",
+      "duration": "May 2019",
+      "certification": "American Express Leadership Academy",
+      "description": "Completed the Executive Education program for world-class leaders and nonprofit managers to tackle challenging social problems hosted by Thunderbird School of Global Management."
+    }
+  ],
+  "workExperience": [
+    {
+      "company": "Technological University Dublin - School of Surveying and Construction Innovation",
+      "location": "Dublin, Ireland",
+      "position": "Hourly-Paid Assistant Lecturer - Web Development",
+      "duration": "February 2023 - Present",
+      "description": "Teach 2 hours weekly of web development to second-year Construction and Surveying students.",
+      "topics_covered": [
+        "Evolution of HTML and web technologies",
+        "Web Semantics",
+        "Web Design and Styling (Basic Colour Theory, CSS, Typography)",
+        "W3C validation",
+        "JavaScript and Interaction (animation, events)",
+        "Code management and principles (DRY Method, GIT, GitHub)",
+        "Server Deployment (cloud deployment with Vercel and Git)"
       ]
     },
-    "links": {
-      "research_profile": "https://scholar.google.com/citations?user=n6EWpDwAAAAJ&hl=en",
-      "Technological University Dublin": "https://www.tudublin.ie/",
-      "Global Voice Group": "http://www.globalvoicegroup.com",
-      "Haitian Education and Leadership Program": "http://www.uhelp.net/"
-    },
-      "news":[ 
-              {
-                  "date": "11/10/2025",
-                  "dateColor": "slate-blue",
-                  "type": "Presentation",
-                  "badgeColor": "yellow",
-                  "gradient": "from-slate-blue to-dusty-rose",
-                  "hoverBorder": "slate-blue",
-                  "icon": "award",
-                  "description": "Gave a talk to the U3A at the Ballymun Library, ireland",
-                  "link": ""
-              },
-                            {
-                  "date": "10/29/2025",
-                  "dateColor": "slate-blue",
-                  "type": "Presentation",
-                  "badgeColor": "yellow",
-                  "gradient": "from-slate-blue to-dusty-rose",
-                  "hoverBorder": "slate-blue",
-                  "icon": "award",
-                  "description": "Gave a talk on Semantic Preferences in Health Data Representation to LBI for Digital Health and Prevention ",
-                  "link": ""
-              }, 
-              {
-                  "date": "10/17/2025",
-                  "dateColor": "slate-blue",
-                  "type": "Conference",
-                  "badgeColor": "blue",
-                  "gradient": "from-lavender to-slate-blue",
-                  "hoverBorder": "slate-blue",
-                  "icon": "microphone",
-                  "description": "Presented our paper at Pervasive Health 2025",
-                  "link": ""
-              },
-              {
-                  "date": "11/09/2025",
-                  "dateColor": "slate-blue",
-                  "type": "Conference",
-                  "badgeColor": "blue",
-                  "gradient": "from-lavender to-slate-blue",
-                  "hoverBorder": "slate-blue",
-                  "icon": "microphone",
-                  "description": "Presented our position paper  at <span class='font-semibold'>BCSHCI2025</span> codesign4AI workshop",
-                  "link": ""
-              },
-              {
-
-                  "date": "11/11/2025",
-                  "dateColor": "dusty-rose",
-                  "type": "Publication",
-                  "badgeColor": "green",
-                  "gradient": "from-dusty-rose to-warm-peach",
-                  "hoverBorder": "dusty-rose",
-                  "icon": "document",
-
-                  "description": "Published an opinion piece  on <span class='font-semibold'>RTÉ brainstorm</span>",
-                  "link": "https://www.rte.ie/brainstorm/2025/1110/1543117-what-if-your-smartwatch-could-sing-your-health-data-to-you/"
-              },
-              {
-                  "date": "10/13/2025",
-                  "dateColor": "slate-blue",
-                  "type": "Conference",
-                  "badgeColor": "blue",
-                  "gradient": "from-lavender to-slate-blue",
-                  "hoverBorder": "slate-blue",
-                  "icon": "microphone",
-                  "description": "Chaired the interactive presentation session at <span class='font-semibold'>Accessibility in Action</span> (TU Dublin)",
-                  "link": "https://ascnet.ie/inclusion4eu-website/world-sight-day-2025/#Presentations"
-              }
+    {
+      "company": "Technological University Dublin - School of Computer Science",
+      "location": "Dublin, Ireland",
+      "position": "Tutor Demonstrator",
+      "duration": "September 2023 - Present",
+      "description": "Conduct lab demonstrations, provide feedback and assess students across several modules.",
+      "modules": [
+        "Human-Computer Interaction",
+        "Databases",
+        "Operating Systems",
+        "Forensics",
+        "Web Development"
       ]
-    } 
-  
+    },
+    {
+      "company": "Technological University Dublin - School of Humanities",
+      "location": "Dublin, Ireland",
+      "position": "Hourly-Paid Assistant Lecturer - Computer Science Fundamentals",
+      "duration": "May 2025 - July 2025",
+      "description": "Taught and designed course content on the International Foundation Programme, exposing students to the breadth of computer science as they transition towards their chosen degree."
+    },
+    {
+      "company": "Global Innovation Teams - School of Computer Science, TU Dublin",
+      "location": "Dublin, Ireland",
+      "position": "Hourly-Paid Assistant Lecturer",
+      "duration": "April 2025 - July 2025",
+      "description": "Mentored two groups of students (10+) from different schools interning with an industry partner in their human-centred technology-driven solutions.",
+      "responsibilities": [
+        "Supported projects on women's transportation safety in private transportation.",
+        "Supported interactive video content creation for kids with dyslexia through storytelling.",
+        "Helped students translate human-centred design into a manageable scrum timeline."
+      ]
+    },
+    {
+      "company": "ACCESS2CS - Johannes Kepler University",
+      "location": "Remote",
+      "position": "Research Intern",
+      "duration": "April 2025 - July 2025",
+      "description": "Completed a research internship as part of the ACCESS2CS consortium.",
+      "responsibilities": [
+        "Led a systematic literature review on accessible teaching methods in computer science, including search strategy, criteria definition, and inclusion review.",
+        "Collaborated with partners across the consortium to synthesise and report findings."
+      ]
+    },
+    {
+      "company": "Global Voice Group",
+      "location": "Madrid, Spain (Remote)",
+      "position": "Front-end Developer",
+      "duration": "January 2019 - September 2021",
+      "description": "Worked with a team of front-end developers on government digital information compliance software to monitor and report mobile money fraudulent activities.",
+      "responsibilities": [
+        "Conducted user research and matched user stories to tailor needs in challenging areas where connectivity and performance optimisation are critical.",
+        "Determined functional solutions that reduced development costs.",
+        "Translated prototypes into reusable Vue.js web features.",
+        "Trained new hires on daily operations to support team productivity."
+      ]
+    },
+    {
+      "company": "Haitian Education and Leadership Program",
+      "location": "Port-au-Prince, Haiti",
+      "position": "Information Technology Coordinator",
+      "duration": "July 2017 - September 2021",
+      "description": "Managed IT operations for staff and students across Haiti and New York.",
+      "responsibilities": [
+        "Oversaw activities of the IT unit serving 45+ staff and 104+ students in Haiti and New York offices.",
+        "Participated in the development of a student information system with CiviCRM integration in collaboration with Openflows, an open-source technology company.",
+        "Integrated core services to optimise scholar recruitment, student and staff management, and administrative process data.",
+        "Advised on online strategies to reach disadvantaged areas using database analytics, resulting in an online application prototype enabling rural applicants to apply for scholarships.",
+        "Built automated reports in the student information system to support research on HELP Education impact assessment in Haiti."
+      ]
+    }
+  ],
+  "service_and_engagement": [
+    {
+      "organization": "Age-Friendly AI",
+      "location": "Dublin, Ireland",
+      "duration": "March 2025 - Present",
+      "description": "Facilitated workshops with older adults on AI awareness as part of Ireland's National Artificial Intelligence Literacy Initiative in four counties; ran and demonstrated AI interaction artefacts at events for older adult attendees."
+    },
+    {
+      "organization": "Inclusion4EU - Co-Design",
+      "location": "Dublin, Ireland",
+      "duration": "March 2025 - Present",
+      "description": "Assisted students and co-designers with intellectual disabilities from Saint John of God as part of a software engineering project jointly developed with lecturers at the School of Computer Science; facilitated workshops with co-designers and industry partners to capture lived experiences and co-create human-centred solutions."
+    },
+    {
+      "organization": "TU Dublin Christian Union Society",
+      "location": "Dublin, Ireland",
+      "duration": "September 2024 - May 2025",
+      "description": "Served as international officer to support inclusive integration of international students across campuses; liaised with Chaplaincy to organise service activities during Remembrance Week for Grangegorman residents and students."
+    },
+    {
+      "organization": "CHAT – Community Hub for Accessible Technology",
+      "location": "Dublin, Ireland",
+      "duration": "2023 - Present",
+      "description": "Volunteer supporting organisers and attendees at regular meetings; extended research impact beyond campus into specialised accessibility and assistive technology networks."
+    },
+    {
+      "organization": "Irish Human Factors and Ergonomics Society (IHFES)",
+      "location": "Dublin, Ireland",
+      "duration": "2023 - Present",
+      "description": "Active student member; participated and presented at the annual IHFES 2023 conference."
+    }
+  ],
+  "extracurricular_activities": [
+    {
+      "organization": "Irish Human Factors and Ergonomics Society (IHFES)",
+      "duration": "2023 - Present",
+      "location": "Dublin, Ireland",
+      "description": "Active student member, participated and presented at the annual IHFES 2023 conference."
+    },
+    {
+      "organization": "CHAT – Community Hub for Accessible Technology",
+      "duration": "2023 - Present",
+      "location": "Dublin, Ireland",
+      "description": "Volunteer at regular CHAT meetings, supporting organisers and attendees."
+    },
+    {
+      "organization": "TU Dublin Christian Union Society",
+      "duration": "September 2024 - May 2025",
+      "location": "Dublin, Ireland",
+      "description": "International officer responsible for inclusive integration of international students in events across all campuses."
+    },
+    {
+      "organization": "Google Hashcode Competition",
+      "description": "Participated in the competition to gain exposure to industry challenges."
+    }
+  ],
+  "awards": [
+    {
+      "title": "ResearchIreland Full-time 4-year PhD Studentship",
+      "organization": "SFI Centre for Research Training in Digitally-Enhanced Reality (d-real)",
+      "year": 2022,
+      "description": "Awarded a fully-funded 4-year PhD scholarship (tuition fees plus annual stipend)."
+    },
+    {
+      "title": "Chevening Scholar",
+      "organization": "British Government (Chevening)",
+      "year": 2021,
+      "description": "Recipient of the prestigious fully-funded Chevening Master’s scholarship (tuition fees plus living stipend)."
+    },
+    {
+      "title": "HELP Scholar",
+      "organization": "Haitian Education and Leadership Program",
+      "year": 2012,
+      "description": "Recipient of a merit- and needs-based undergraduate scholarship awarded to academically excellent and community-engaged high school students."
+    }
+  ],
+  "skills": {
+    "languages": [
+      "English (Fluent)",
+      "French (Fluent)",
+      "Créole (Native)",
+      "Spanish (Beginner)"
+    ],
+    "software": [
+      "Microsoft Office Suite (Proficient)",
+      "LaTeX (Intermediate)",
+      "Figma UI/UX (Intermediate)"
+    ],
+    "programming_languages": [
+      "C",
+      "Java",
+      "PHP",
+      "JavaScript",
+      "Ada",
+      "Python"
+    ],
+    "web_technologies": [
+      "HTML5",
+      "CSS3",
+      "JavaScript (Vue.js, Three.js)",
+      "PHP (Laravel, Drupal, CiviCRM)"
+    ],
+    "development_tools": [
+      "Git (Repo Maintainer)",
+      "REST API",
+      "SOAP Web Services (JAX-WS)"
+    ],
+    "additional_skills": [
+      "Data optimisation in Python",
+      "Verification in Spark Ada",
+      "Project Management (Jira, Slack, MantisBT)"
+    ]
+  },
+  "links": {
+    "personal_site": "https://petersonjean.me",
+    "research_profile": "https://scholar.google.com/citations?user=n6EWpDwAAAAJ&hl=en",
+    "Technological University Dublin": "https://www.tudublin.ie/",
+    "Global Voice Group": "http://www.globalvoicegroup.com",
+    "Haitian Education and Leadership Program": "http://www.uhelp.net/"
+  },
+  "news": [ 
+    {
+      "date": "05/30/2025",
+      "dateColor": "slate-blue",
+      "type": "Presentation",
+      "badgeColor": "yellow",
+      "gradient": "from-slate-blue to-dusty-rose",
+      "hoverBorder": "slate-blue",
+      "icon": "microphone",
+      "description": "Delivered talk: <span class='font-semibold'>CAPE: Interaction multimodale pour aider les personnes âgées à mieux utiliser leurs données de santé</span> at “Ma Thèse en 180 secondes”, University of Galway.",
+      "location": "University of Galway, Ireland"
+    },
+    {
+      "date": "05/07/2025",
+      "dateColor": "slate-blue",
+      "type": "Presentation",
+      "badgeColor": "yellow",
+      "gradient": "from-slate-blue to-dusty-rose",
+      "hoverBorder": "slate-blue",
+      "icon": "microphone",
+      "description": "Presented <span class='font-semibold'>Beyond Numbers: Making Sense of Health Data Representation</span> at the tPot Symposium, TU Dublin",
+      "location": "Technological University Dublin, Ireland"
+    },
+    {
+      "date": "2023",
+      "dateColor": "slate-blue",
+      "type": "Presentation",
+      "badgeColor": "yellow",
+      "gradient": "from-slate-blue to-dusty-rose",
+      "hoverBorder": "slate-blue",
+      "icon": "microphone",
+      "description": "Presented <span class='font-semibold'>“Significance in Signs?”: Beyond Conventional Health Data Representations for Older Adults</span> at the Annual Research Symposium, Faculty of Computing.",
+      "location": "Technological University Dublin, Ireland"
+    },
+    {
+      "date": "06/11/2023",
+      "dateColor": "slate-blue",
+      "type": "Presentation",
+      "badgeColor": "yellow",
+      "gradient": "from-slate-blue to-dusty-rose",
+      "hoverBorder": "slate-blue",
+      "icon": "microphone",
+      "description": "Gave talk <span class='font-semibold'>Enhancing Health Data Representation for Older Adults: A Search for Evidence</span> at the Irish Human Factors and Ergonomics Society annual symposium.",
+      "location": "Technological University Dublin, Ireland"
+    },
+ 
+    {
+      "date": "11/10/2025",
+      "dateColor": "slate-blue",
+      "type": "Presentation",
+      "badgeColor": "yellow",
+      "gradient": "from-slate-blue to-dusty-rose",
+      "hoverBorder": "slate-blue",
+      "icon": "award",
+      "description": "Gave a talk to the U3A at the Ballymun Library, Ireland",
+      "link": ""
+    },
+    {
+      "date": "10/29/2025",
+      "dateColor": "slate-blue",
+      "type": "Presentation",
+      "badgeColor": "yellow",
+      "gradient": "from-slate-blue to-dusty-rose",
+      "hoverBorder": "slate-blue",
+      "icon": "award",
+      "description": "Gave a talk on Semantic Preferences in Health Data Representation to LBI for Digital Health and Prevention",
+      "link": ""
+    },
+    {
+      "date": "10/17/2025",
+      "dateColor": "slate-blue",
+      "type": "Conference",
+      "badgeColor": "blue",
+      "gradient": "from-lavender to-slate-blue",
+      "hoverBorder": "slate-blue",
+      "icon": "microphone",
+      "description": "Presented our paper at Pervasive Health 2025",
+      "link": ""
+    },
+    {
+      "date": "11/09/2025",
+      "dateColor": "slate-blue",
+      "type": "Conference",
+      "badgeColor": "blue",
+      "gradient": "from-lavender to-slate-blue",
+      "hoverBorder": "slate-blue",
+      "icon": "microphone",
+      "description": "Presented our position paper at <span class='font-semibold'>BCSHCI2025</span> codesign4AI workshop",
+      "link": ""
+    },
+    {
+      "date": "11/11/2025",
+      "dateColor": "dusty-rose",
+      "type": "Publication",
+      "badgeColor": "green",
+      "gradient": "from-dusty-rose to-warm-peach",
+      "hoverBorder": "dusty-rose",
+      "icon": "document",
+      "description": "Published an opinion piece on <span class='font-semibold'>RTÉ brainstorm</span>",
+      "link": "https://www.rte.ie/brainstorm/2025/1110/1543117-what-if-your-smartwatch-could-sing-your-health-data-to-you/"
+    },
+    {
+      "date": "10/13/2025",
+      "dateColor": "slate-blue",
+      "type": "Conference",
+      "badgeColor": "blue",
+      "gradient": "from-lavender to-slate-blue",
+      "hoverBorder": "slate-blue",
+      "icon": "microphone",
+      "description": "Chaired the interactive presentation session at <span class='font-semibold'>Accessibility in Action</span> (TU Dublin)",
+      "link": "https://ascnet.ie/inclusion4eu-website/world-sight-day-2025/#Presentations"
+    }
+  ]
+}
