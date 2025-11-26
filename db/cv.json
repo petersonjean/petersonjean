@@ -1,5 +1,5 @@
 {
-  "name": "Peterson Jean",
+  "name": "My CV",
   "contact": {
     "address": "Dublin, Ireland",
     "email": "jean.peterson[at]tudublin.ie",
@@ -92,11 +92,11 @@
   ],
   "workExperience": [
     {
-      "company": "Technological University Dublin - School of Surveying and Construction Innovation",
+      "company": "TU Dublin - School of Surveying and Construction Innovation",
       "location": "Dublin, Ireland",
       "position": "Hourly-Paid Assistant Lecturer - Web Development",
-      "duration": "February 2023 - Present",
-      "description": "Teach 2 hours weekly of web development to second-year Construction and Surveying students.",
+      "duration": "February 2023 - May 2025",
+      "description": "Taught a 2-hour weekly web development course to second-year Construction and Surveying students.",
       "topics_covered": [
         "Evolution of HTML and web technologies",
         "Web Semantics",
@@ -112,7 +112,7 @@
       "location": "Dublin, Ireland",
       "position": "Tutor Demonstrator",
       "duration": "September 2023 - Present",
-      "description": "Conduct lab demonstrations, provide feedback and assess students across several modules.",
+      "description": "Conducted lab demonstrations, provided feedback and assessed students across several modules.",
       "modules": [
         "Human-Computer Interaction",
         "Databases",
@@ -264,7 +264,7 @@
     ],
     "software": [
       "Microsoft Office Suite (Proficient)",
-      "LaTeX (Intermediate)",
+      "LaTeX",
       "Figma UI/UX (Intermediate)"
     ],
     "programming_languages": [
