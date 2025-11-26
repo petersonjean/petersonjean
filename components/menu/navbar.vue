@@ -46,7 +46,7 @@ onUnmounted(() => {
       <div class="flex justify-between items-center h-16">
         <!-- Logo/Brand -->
         <div class="flex-shrink-0">
-          <h1 class="text-xl font-bold text-slate-700  ">
+          <h1 class="text-2xl font-bold text-slate-700  ">
             Peterson Jean
           </h1>
         </div>
@@ -57,10 +57,10 @@ onUnmounted(() => {
             <NuxtLink 
               to="/" 
               :class="[
-                'px-3 py-2 rounded-lg text-sm font-medium transition-colors duration-200',
+                'px-3 py-2 rounded-lg text-md font-medium transition-colors duration-200',
                 $route.path === '/' 
                   ? 'active text-white scale-105' 
-                  : 'text-gray-700 hover:text-slate-700 px-3 py-2 rounded-lg text-sm font-medium transition-colors duration-200 hover:bg-white/50'
+                  : 'text-gray-700 hover:text-slate-700 px-3 py-2 rounded-lg text-md font-medium transition-colors duration-200 hover:bg-white/50'
               ]"
             >
               Home
@@ -68,10 +68,10 @@ onUnmounted(() => {
             <NuxtLink 
               to="/publications" 
               :class="[
-                'px-3 py-2 rounded-lg text-sm font-medium transition-colors duration-200',
+                'px-3 py-2 rounded-lg text-md font-medium transition-colors duration-200',
                 $route.path === '/publications' 
                   ? 'active text-white scale-105' 
-                  : 'text-gray-700 hover:text-slate-700 px-3 py-2 rounded-lg text-sm font-medium transition-colors duration-200 hover:bg-white/50'
+                  : 'text-gray-700 hover:text-slate-700 px-3 py-2 rounded-lg text-md font-medium transition-colors duration-200 hover:bg-white/50'
               ]"
             >
               Publications
@@ -79,10 +79,10 @@ onUnmounted(() => {
             <NuxtLink 
               to="/blog" 
               :class="[
-                'px-3 py-2 rounded-lg text-sm font-medium transition-colors duration-200',
+                'px-3 py-2 rounded-lg text-md font-medium transition-colors duration-200',
                 $route.path === '/blog' || $route.path.startsWith('/blog/') 
                   ? 'active text-white scale-105' 
-                  : 'text-gray-700 hover:text-slate-700 px-3 py-2 rounded-lg text-sm font-medium transition-colors duration-200 hover:bg-white/50'
+                  : 'text-gray-700 hover:text-slate-700 px-3 py-2 rounded-lg text-md font-medium transition-colors duration-200 hover:bg-white/50'
               ]"
             >
               Blog
@@ -90,10 +90,10 @@ onUnmounted(() => {
             <NuxtLink 
               to="/resume" 
               :class="[
-                'px-3 py-2 rounded-lg text-sm font-medium transition-colors duration-200',
+                'px-3 py-2 rounded-lg text-md font-medium transition-colors duration-200',
                 $route.path === '/resume' 
                  ? 'active text-white scale-105' 
-                  : 'text-gray-700 hover:text-slate-700 px-3 py-2 rounded-lg text-sm font-medium transition-colors duration-200 hover:bg-white/50'
+                  : 'text-gray-700 hover:text-slate-700 px-3 py-2 rounded-lg text-md font-medium transition-colors duration-200 hover:bg-white/50'
               ]"
             >
               Resume
@@ -101,10 +101,10 @@ onUnmounted(() => {
             <NuxtLink 
               to="/contact" 
               :class="[
-                'px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200',
+                'px-4 py-2 rounded-lg text-md font-medium transition-all duration-200',
                 $route.path === '/contact' 
                   ? 'active text-white scale-105' 
-                  : 'text-gray-700 hover:text-slate-700 px-3 py-2 rounded-lg text-sm font-medium transition-colors duration-200 hover:bg-white/50'
+                  : 'text-gray-700 hover:text-slate-700 px-3 py-2 rounded-lg text-md font-medium transition-colors duration-200 hover:bg-white/50'
               ]"
             >
               Contact
@@ -188,7 +188,7 @@ onUnmounted(() => {
               'block px-4 py-3 rounded-lg text-base font-medium transition-colors duration-200',
               $route.path === '/contact' 
                  ? 'active active-mobile text-white scale-105' 
-                  : 'text-gray-700 hover:text-slate-700 px-3 py-2 rounded-lg text-sm font-medium transition-colors duration-200 hover:bg-white/50'
+                  : 'text-gray-700 hover:text-slate-700 px-3 py-2 rounded-lg text-md font-medium transition-colors duration-200 hover:bg-white/50'
               ]"
           >
             Contact
