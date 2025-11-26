@@ -162,7 +162,7 @@ onMounted(() => {
                     </div>
 
                     <div v-if="publicationNews.length" class="news-group">
-                        <h3 class="news-group- underline decoration-4 decoration-green-800 underline-offset-4">Publications &amp; Media</h3>
+                        <h3 class="news-group-title underline decoration-4 decoration-green-800 underline-offset-4">Publications &amp; Media</h3>
                         <ul class="news-list">
                         <li
                             v-for="item in publicationNews"
@@ -433,11 +433,11 @@ onMounted(() => {
 }
 
 .news-item {
-  @apply flex items-start text-sm text-slate-800 dark:text-slate-100;
+  @apply flex items-start  text-slate-800 dark:text-slate-100;
 }
 
 .news-date {
-  @apply text-xs  dark:text-slate-400 w-24 flex-shrink-0;
+  @apply   dark:text-slate-400 w-24 flex-shrink-0;
 }
 
 .news-dot {
