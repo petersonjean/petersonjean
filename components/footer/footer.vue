@@ -24,7 +24,7 @@
                    
                 </div>
                 <div class="max-w-7xl mx-auto pt-2 px-4 sm:px-6 lg:px-8 text-center" >
-                    <p>&copy; 2024 Peterson Jean. All rights reserved.</p>
+                    <p>&copy;{{new Date().getFullYear()}} Peterson Jean. All rights reserved.</p>
                 </div>
             </div>
         </div>
