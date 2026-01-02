@@ -410,6 +410,30 @@
       "icon": "microphone",
       "description": "Chaired the interactive presentation session at <span class='font-semibold'>Accessibility in Action</span> (TU Dublin)",
       "link": "https://ascnet.ie/inclusion4eu-website/world-sight-day-2025/#Presentations"
+    },
+    {
+      "date": "12/27/2025",
+      "dateColor": "slate-blue",
+      "type": "Presentation",
+      "badgeColor": "yellow",
+      "gradient": "from-slate-blue to-dusty-rose",
+      "hoverBorder": "slate-blue",
+      "icon": "microphone",
+      "description": "Presented <span class='font-semibold'>“Au-delà du visuel”: Approche sémantique et multimodale  pour l’interprétation des données de santé par les personnes âgées </span> at HaitiNexus2025 conference",
+      "location": "Online",
+      "link": "https://www.youtube.com/watch?v=YF3l9t4I5T0"
+    },
+        {
+      "date": "12/16/2025",
+      "dateColor": "slate-blue",
+      "type": "Conference",
+      "badgeColor": "blue",
+      "gradient": "from-lavender to-slate-blue",
+      "hoverBorder": "slate-blue",
+      "icon": "microphone",
+      "location": "Faculty of Computing, Technological University Dublin, Ireland",
+      "description": "Demoed two research prototypes at the <span class='font-semibold'>Annual Research Symposium</span>",
+      "link": "https://www.linkedin.com/posts/ekaterina-uetova_last-tuesday-i-attended-the-annual-research-ugcPost-7409586260668776449-Ifel?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB75wLYBSM4Z-AUDBt_qurENBfnuPxjbW-E"
     }
   ]
 }
