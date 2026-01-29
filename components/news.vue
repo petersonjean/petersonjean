@@ -1,5 +1,6 @@
 <script lang="ts"  setup>
 import newsData from '@/db/cv.json';
+import { log } from 'tone/build/esm/core/util/Debug';
 const props = defineProps<{
   length?: 'short' | 'long'
 }>()
@@ -47,6 +48,7 @@ const badgeColors = {
         }
         return db.year - da.year;
     });
+    sortedNews = sortedNews.map((el) => ({ ...el,descriptionlong: el.link ? el.description+`. Read <a href="${el.link}" style="color:#c23636; text-decoration:none; border-bottom:2px solid #c23636;">here</a>`: el.description }));
 const news = ref(sortedNews ?? []);
 
 const presentationNews = computed(() =>
@@ -83,11 +85,12 @@ onMounted(() => {
     //     return db.year - da.year;
     // });
 
-    console.log("newsdata:", sortedNews );
+    // console.log("newsdata:", sortedNews );
 
     // add formattedDate for display while keeping original date field for keys/sorting
     newsRef.value = sortedNews.map((el: any) => ({ ...el, formattedDate: formatMonthDay(el.date) }));
-
+    console.log("descripton", newsRef.value);
+    
     
 });
  
@@ -115,7 +118,7 @@ onMounted(() => {
                                 <span class="text-sm font-bold text-slate-blue">{{ el.formattedDate }}:</span>
                                 <span :class="`px-3 y-1 ${badgeColors[el.badgeColor]} text-xs font-semibold rounded-full bg-gradient-to-r from-[] to-[#FFFFFF]`" style="border:1px solid #c23636;">{{el.type}}</span>
                             </div>
-                            <p class=" text-gray leading-relaxed"><span class="news-dot" style="display: inline-block; display: none;"></span> <span v-html="el.description"></span> <NuxtLink v-if="el.link"  :to=" el.link" style="color:#c23636; text-decoration:none; border-bottom:2px solid #c23636;" > -> </NuxtLink></p>
+                            <p class=" text-gray leading-relaxed"><span class="news-dot" style="display: inline-block; display: none;"></span> <span v-html="el.descriptionlong"></span> <NuxtLink v-if="el.link"  :to=" el.link" style="color:#c23636; text-decoration:none; border-bottom:2px solid #c23636;" > -> </NuxtLink></p>
                         </div>
                     </div> 
             </div> 
@@ -141,7 +144,7 @@ onMounted(() => {
                         >
                             <span :class="`news-date  ${badgeColors[item.badgeColor]}`">{{ item.date }}</span>
                             <span class="news-dot"></span>
-                            <span class="news-description" v-html="item.description"></span>
+                            <span class="news-description" v-html="item.descriptionlong"></span>
                         </li>
                         </ul>
                     </div>
@@ -156,7 +159,7 @@ onMounted(() => {
                         >
                             <span :class="`news-date  ${badgeColors[item.badgeColor]}`">{{ item.date }}</span>
                             <span class="news-dot"></span>
-                            <span class="news-description" v-html="item.description"></span>
+                            <span class="news-description" v-html="item.descriptionlong"></span>
                         </li>
                         </ul>
                     </div>
@@ -171,7 +174,7 @@ onMounted(() => {
                         >
                             <span :class="`news-date  ${badgeColors[item.badgeColor]}`">{{ item.date }}</span>
                             <span class="news-dot"></span>
-                            <span class="news-description" v-html="item.description"></span>
+                            <span class="news-description" v-html="item.descriptionlong"></span>
                         </li>
                         </ul>
                     </div>

@@ -91,6 +91,18 @@
     }
   ],
   "workExperience": [
+        {
+      "company": "TU Dublin - School of Computer Science",
+      "location": "Dublin, Ireland",
+      "position": "Hourly-Paid Assistant Lecturer - Human-Computer Interaction",
+      "duration": "January 2026 - Present",
+      "description": "Taught CMPU2008- HCI module to second-year Computer science students.",
+      "topics_covered": [
+        "Theories of HCI",
+        "User research,Design Thinking, Evaluation",
+        "User interfaces, Interaction"
+        ]
+    },
     {
       "company": "TU Dublin - School of Surveying and Construction Innovation",
       "location": "Dublin, Ireland",
@@ -434,6 +446,18 @@
       "location": "Faculty of Computing, Technological University Dublin, Ireland",
       "description": "Demoed two research prototypes at the <span class='font-semibold'>Annual Research Symposium</span>",
       "link": "https://www.linkedin.com/posts/ekaterina-uetova_last-tuesday-i-attended-the-annual-research-ugcPost-7409586260668776449-Ifel?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB75wLYBSM4Z-AUDBt_qurENBfnuPxjbW-E"
+    },
+     {
+      "date": "01/26/2026",
+      "dateColor": "slate-blue",
+      "type": "Presentation",
+      "badgeColor": "yellow",
+      "gradient": "from-slate-blue to-dusty-rose",
+      "hoverBorder": "slate-blue",
+      "icon": "microphone",
+      "description": "I started teaching CMPU2008 (Human-Computer Interaction) semester 2(25-26) ",
+      "location": "School of Computer Science, Technological University Dublin, Ireland",
+      "link": ""
     }
   ]
 }
